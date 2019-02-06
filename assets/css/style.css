@@ -1,0 +1,314 @@
+html {
+    background-image: url("../images/manhattan.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+#navParent {
+    background-color: rgba(0, 0, 0, .8);
+    border-bottom: 3px solid #cccccc;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    max-height: 74.59px;
+}
+
+.navChild {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 960px;
+    margin: 2% 0 0 10%;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+}
+
+#name {
+    float: left;
+    padding: 0 0 0 3%;
+    margin: 0 0 .5% 0;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 80%;
+    color: #E9D863;
+    font-size: 30px;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+}
+
+.navBarLinks {
+    float: right;
+    width: 10%;
+    text-align: center;
+    margin: 0 0 .5% 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+    color: khaki;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: khaki;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+    text-decoration: none;
+  }
+
+#centerLink {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-color: grey;
+}
+
+li {
+    list-style: none;
+}
+
+/* .contentSectionWrapper {
+    display: flex;
+    padding: 0 1em;
+} */
+
+.contentSection {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    min-height: 100%;
+    max-width: calc(100% - 1em);
+    width: 897px;
+    padding: 0 30px 20px 30px;
+    margin-top: calc(50px + 5%);
+    margin: 5% auto;
+    margin-bottom: calc(40px + 5%);
+    border: 1.5px solid darkgrey;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #f6f6f6;
+    text-shadow: -1px -1px 0 #000000;
+    font-size: 200%;
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    color: khaki;
+    background-color: khaki;
+    height: 3px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+#placeholderImage {
+    float: left;
+    margin: 0 20px 10px 0;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+h3 {
+    text-decoration: underline;
+}
+footer {
+    background-color: rgba(0, 0, 0, .8);
+    margin-top: 5%;
+    height: 40px;
+    line-height: 45px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    border-top: 5px solid khaki;
+    color: #dddddd;
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+}
+
+/* ---------- PORTFOLIO PAGE ----------- */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 100%;
+    padding: 1% 5% 5% 5%;
+}
+
+.column img {
+    margin-top: 10%;
+    vertical-align: middle;
+}
+
+
+/* #col1img1 - col2img2 used to place text labels over images */
+#col1img1 {
+    position: relative;
+    align-content: center;
+}
+
+#col1img2 {
+    position: relative;
+    align-content: center;
+}
+
+#col2img1 {
+    position: relative;
+    align-content: center;
+}
+
+#col2img2 {
+    position: relative;
+    align-content: center;
+}
+
+#portfolioSection img {
+    border: 10px solid #e5e5e5;
+}
+
+.portfolioImage h2 {
+    position: absolute;  
+    left: calc(50% + 10px);
+    top: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    min-width: 100%;
+    color: #E9D863;
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/* ---------- CONTACT PAGE ----------- */
+
+
+label {
+    color: khaki;
+}
+
+#email {
+    height: 17px;
+    width: 50%;
+    border-radius: 3px;
+    margin: 1px 0 0 0;
+}
+
+#fname {
+    height: 17px;
+    width: 50%;
+    border-radius: 3px;
+    margin: 1px 0 0 0;
+}
+
+#message {
+    height: 120px;
+    width: 50%;
+    border-radius: 3px;
+    margin: 1px 0 0 0;
+    padding-bottom: 5%;
+}
+
+#message::placeholder {
+    margin-right: 50%;
+}
+
+#submitButton {
+    height: 40px;
+    width: 140px;
+    border-radius: 3px;
+
+    text-align: center;
+}
+
+/* ---------- FOR SMALLER SCREENS ----------  */
+
+@media only screen and (min-width: 960px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) { 
+     #name {
+        display: none;
+    }
+    
+    .navBarLinks {
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin-top: 0px;
+        margin-left: 1%;
+        width: 100%;
+        height: 100%;
+    }
+    .dropbtn {
+        background-color: rgb(0,0,0, 80%);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+    }
+    
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        background-color: black;
+        color: #f6f6f6;
+        font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: rgb(64,64,64,.8);
+        color: khaki;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        color: khaki;
+    }
+  }
